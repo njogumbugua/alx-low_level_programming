@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - A program that prints a line with puts function to  determine if a number is positive, negative or zero.
+ * main -  determines if a number is positive, negative or zero.
  *
  * Return: 0 (Success)
  */
