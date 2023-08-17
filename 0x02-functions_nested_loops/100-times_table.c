@@ -5,41 +5,41 @@
  */
 void print_times_table(int n)
 {
-int i, j, k;
+int row, column, result;
 if (n >= 0 && n <= 15)
 {
-for (i = 0; i <= n; i++)
+for (row = 0; row <= n; row++)
 {
-for (j = 0; j <= n; j++)
+for (column = 0; column <= n; column++)
 {
-k = j * i;
-if (j == 0)
+result = column * row;
+if (column == 0)
 {
-_putchar(k + '0');
+_putchar(result + '0');
 }
-else if (k < 10 && j != 0)
+else if (result < 10 && column != 0)
 {
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
 _putchar(' ');
-_putchar(k + '0');
+_putchar(result + '0');
 }
-else if (k >= 10 && k < 100)
+else if (result >= 10 && result < 100)
 {
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
-_putchar((k / 10) + '0');
-_putchar((k % 10) + '0');
+_putchar((result / 10) + '0');
+_putchar((result % 10) + '0');
 }
-else if (k >= 100)
+else if (result >= 100)
 {
 _putchar(',');
 _putchar(' ');
-_putchar((k / 100) + '0');
-_putchar(((k / 10) % 10) + '0');
-_putchar((k % 10) + '0');
+_putchar((result / 100) + '0');
+_putchar(((result / 10) % 10) + '0');
+_putchar((result % 10) + '0');
 }
 }
 _putchar('\n');
