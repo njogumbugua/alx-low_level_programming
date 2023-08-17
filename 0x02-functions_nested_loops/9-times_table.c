@@ -4,31 +4,31 @@
  */
 void times_table(void)
 {
-int i, j, k;
+int row, column, value;
 
-for (i = 0; i < 10; i++)
+for (row = 0; row < 10; row++)
 {
-for (j = 0; j < 10; j++)
+for (column = 0; column < 10; column++)
 {
-k = j * i;
-if (j == 0)
+value = column * row;
+if (column == 0)
 {
-_putchar(k + '0');
+_putchar(value + '0');
 }
 
-if (k < 10 && j != 0)
+if (value < 10 && column != 0)
 {
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
-_putchar(k + '0');
+_putchar(value + '0');
 }
-else if (k >= 10)
+else if (value >= 10)
 {
 _putchar(',');
 _putchar(' ');
-_putchar((k / 10) + '0');
-_putchar((k % 10) + '0');
+_putchar((value / 10) + '0');
+_putchar((value % 10) + '0');
 }
 }
 _putchar('\n');
