@@ -3,7 +3,7 @@
 /**
  * print_name - print name using pointer to function
  * @name: string to add
- * @f: function pointer 
+ * @f: function pointer
  */
 void print_name(char *name, void (*f)(char *))
 {
